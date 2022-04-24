@@ -1,0 +1,18 @@
+name: CI
+on:
+
+  workflow_dispatch:
+
+jobs:
+  commands:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Commands to run
+      
+        run: |
+          pip3 install codespell
+          git clone https://github.com/tldr-pages/tldr #Change this 
+          cd tldr
+          codespell
