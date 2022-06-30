@@ -15,4 +15,5 @@ jobs:
           pip3 install codespell
           git clone https://github.com/tldr-pages/tldr #Change this 
           cd tldr
-          codespell README.md
+          codespell 
+          echo 1
