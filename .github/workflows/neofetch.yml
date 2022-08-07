@@ -1,0 +1,16 @@
+name: neofetch # Change this
+
+on:
+
+  workflow_dispatch:
+
+jobs:
+  commands:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Commands to run
+      
+        run: |
+          sudo apt install neofetch && neofetch
